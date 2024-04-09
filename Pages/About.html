@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMS-About</title>
+    <style>
+        /* Add your CSS styles here */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .NavBar{
+    display: flex;
+    justify-content: space-between;
+    height: 55px;
+    padding: 10px;
+    background-color: black;
+    
+}
+.ProfileImageContainer{
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    object-fit: contain;
+    box-shadow: 0 0 5px white;
+}
+.ProfileImageContainer img{
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    object-fit: contain;
+}
+.NavControls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.NavControlsBtn{
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    margin-left: 5px;
+    cursor: pointer;
+    font-family: "Ubuntu Mono", monospace;
+
+}
+.Active{
+    background-color: rgb(30, 30, 123);
+    color: white;
+}
+
+        .container {
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #ff6347; /* Tomato color */
+        }
+    </style>
+</head>
+<body>
+    <nav class="NavBar">
+        <div class="ProfileImageContainer">
+            <img src="../Assets/profilePhoto.jpg" alt="profilePhoto"/>
+        </div>
+        <div class="NavControls">
+            <button  class="NavControlsBtn inActive" onclick="navigateHome()">Home</button>
+            <button class="NavControlsBtn Active">About</button>
+            <button class="NavControlsBtn inActive" onclick="contactUsNavigate()">Contact Us</button>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>About Mohamed's Movie Site (MMS)</h1>
+        <p>Welcome to Mohamed's Movie Site (MMS)! MMS is your ultimate destination for unlimited entertainment, offering a vast collection of movies and series for free streaming.</p>
+        <p>At MMS, we understand the importance of access to quality entertainment, which is why we've curated an extensive library of content to cater to every taste and preference. From action-packed blockbusters to heartwarming dramas, thrilling thrillers to laugh-out-loud comedies, and everything in between, MMS has something for everyone.</p>
+        <p><span class="highlight">Mohamed's Movie Site</span> is committed to providing a seamless and enjoyable streaming experience for our users. Our intuitive interface makes it easy to discover new titles, create personalized watchlists, and dive into your favorite genres with just a few clicks.</p>
+        <p>It's important to note that MMS does not host the content itself. Instead, we partner with reputable content providers to bring you the latest and greatest movies and series legally and ethically. By doing so, we ensure that all content available on MMS adheres to copyright regulations and respects the rights of content creators.</p>
+        <p>Whether you're a casual moviegoer, a binge-watching enthusiast, or simply looking for some entertainment to unwind after a long day, MMS has you covered. Join our growing community of movie lovers and embark on a cinematic journey like never before.</p>
+        <p>Thank you for choosing MMS as your go-to destination for entertainment. Sit back, relax, and let the magic of the movies unfold!</p>
+    </div>
+    <script>
+        function navigateHome(){
+            window.location.href = "../"
+        }
+        function contactUsNavigate (){
+            window.location.href = "./Contact.html"
+        }
+    </script>
+</body>
+</html>

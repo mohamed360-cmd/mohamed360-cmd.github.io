@@ -14,7 +14,8 @@
         </div>
         <div class="NavControls">
             <button  class="NavControlsBtn Active">Home</button>
-            <button class="NavControlsBtn inActive">About</button>
+            <button class="NavControlsBtn inActive" onclick="aboutNavigate()">About</button>
+            <button class="NavControlsBtn inActive" onclick="contactUsNavigate()">Contact Us</button>
         </div>
     </nav>
     <div class="ContentBody">
@@ -24,5 +25,13 @@
             <button class="watchNowBtn">Watch Now</button>
         </div>
     </div>
+    <script>
+        function aboutNavigate (){
+            window.location.href = "../Pages/About.html"
+        }
+        function contactUsNavigate (){
+            window.location.href = "../Pages/Contact.html"
+        }
+    </script>
 </body>
 </html>
