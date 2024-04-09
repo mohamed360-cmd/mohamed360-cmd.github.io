@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    overflow: hidden;
+}
+.NavBar{
+    display: flex;
+    justify-content: space-between;
+    height: 65px;
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    
+}
+.ProfileImageContainer{
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    object-fit: contain;
+    box-shadow: 0 0 5px white;
+}
+.ProfileImageContainer img{
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    object-fit: contain;
+}
+.NavControls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.NavControlsBtn{
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    margin-left: 5px;
+    cursor: pointer;
+    font-family: "Ubuntu Mono", monospace;
+
+}
+.Active{
+    background-color: rgb(30, 30, 123);
+    color: white;
+}
+.ContentBody{
+    height: 100vh;
+    width: 100%;
+    background-image: url("../Assets/bgImage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+justify-content: center;
+align-items: center;  
+font-family: "Ubuntu Mono", monospace;
+
+}
+.ContentContainer{
+    height: 150px;
+    width: 400px;
+    background-color: white;
+    border-radius: 20px;
+   box-shadow :17px 20px 3px 2px black;
+   display: flex;
+   flex-direction: column;
+}
+.ContentContainer h2 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-size: 1.7rem;
+
+}
+.ContentContainer p{
+    font-size: 1.6rem;
+}
+.watchNowBtn{
+    justify-self: center;
+    align-self: center;
+    margin-top: 20px;
+    padding: 15px;
+    border: none;
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+    font-weight: bold;
+    font-family: "Ubuntu Mono", monospace;
+    cursor: pointer;
+    animation: pulse 1s infinite;
+    font-size: 1.1rem;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.watchNowBtn:hover{
+    animation-play-state: paused;
+}
